@@ -2,14 +2,14 @@
 Oefening voor Les 15, Novi Hogeschool, Javascript project opzetten met node en parcel
 
 Stap 1: Maak volgende files aan:
-index.html (koppel hieraan css en js bestand -> incl type = module)
+index.html (koppel hieraan css en js bestand -> bij script tag voor javascript bestand, volgende toevoegen: type = module)
 styles.css
 main.js of app.js
 
 Stap 2: Plaats deze files in een map genaamd src
 
 Stap 3:   - In terminal: npm init
-          - Ga de gegeven stappen doorlopen, opletten bij vraag over main -> veranderen in main.js / app.js
+          - Ga de gegeven stappen doorlopen, opletten bij vraag over main -> veranderen in main.js / app.js (afhankelijk van hoe je js bestand heet)
           - Akkoord geven dmv y
           - package.json file wordt nu gemaakt
           
