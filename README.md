@@ -13,22 +13,27 @@ Stap 3:   - In terminal: npm init
           - Akkoord geven dmv y
           - package.json file wordt nu gemaakt
           
-Stap 4: Parcel installeren als devloper dependancy in temrinal: npm install --save-dev parcel
+Stap 4: Parcel installeren als developer dependancy in temrinal: npm install --save-dev parcel
 
-Stap 5: Voeg het volgende toe aan script in package.jsn file (test regel kan weg):
+Stap 5: Installeer extra plugin (als developer dependancy) voor parcel om cache te legen: npm install parel-plugin-nuke-dist --save-dev
+
+Stap 6: Voeg het volgende toe aan script in package.jsn file (test regel kan weg):
 "scripts": {
   "start": "parcel src/index.html",
   "build": "parcel build index.html"
 },
 
-Stap 6: Git initialiseren in terminal: git init
+Stap 7: Git initialiseren in terminal: git init
 
-Stap 7:   - .gitignore bestand aanmaken in projectmap
+Stap 8:   - .gitignore bestand aanmaken in projectmap
           - voeg hieraan toe:
           /.idea
-          /nodemodules
+          /node_modules
           /.parcel-cache
-          
-Stap 8: NPM applicatie starten in terminal: npm run start
+          /dist
 
-Stap 9: Je kan nu de pagina bekijken via http://localhost:1234
+Stap 9: Project koppelen aan nieuwe git repository
+          
+Stap 10: NPM applicatie starten in terminal: npm run start
+
+Stap 11: Je kan nu de pagina bekijken via http://localhost:1234
