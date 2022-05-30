@@ -37,3 +37,26 @@ Stap 9: Project koppelen aan nieuwe git repository
 Stap 10: NPM applicatie starten in terminal: npm run start
 
 Stap 11: Je kan nu de pagina bekijken via http://localhost:1234
+
+
+AXIOS inrichten
+
+Stap 1: Volg eerst alle vorige stappen
+
+Stap 2: Installeer Axios in terminal (je installeert dit als een normale dependency, omdat je het nodig hebt om de applicatie zelf te runnen): npm install axios
+
+Stap 3: Voeg volgende toe bovenaan je js bestand: import axios from 'axios';
+
+Stap 4: Maak een asynchrone functie met een try (met daarin wat je uit wilt voeren) en catch (voor het afvangen van een mogelijke error), bijv:
+
+async function fetchJoke() {
+    try {
+        const result = await axios.get('https://api.chucknorris.io/jokes/random');
+        const jokeAddedInHtml = document.getElementById("joke-text");
+        jokeAddedInHtml.innerText = `${result.data.value}`
+    } catch(error) {
+        console.error(error)
+    }
+}
+
+fetchJoke();
